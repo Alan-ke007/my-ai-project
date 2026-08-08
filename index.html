@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的第一个 AI 项目</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 480px; margin: 80px auto; text-align: center; color: #333; }
+    input, button { font-size: 16px; padding: 8px 12px; margin: 6px; }
+    button { cursor: pointer; background: #378ADD; color: white; border: none; border-radius: 6px; }
+    #result { margin-top: 16px; font-size: 15px; color: #0C447C; }
+  </style>
+</head>
+<body>
+  <h1>我的第一个 AI 项目 👋</h1>
+  <p>这是用 HTML + JavaScript 写的第一个 demo，不需要任何依赖，双击就能在浏览器打开。</p>
+  <input id="name" placeholder="输入你的名字" />
+  <button onclick="greet()">打招呼</button>
+  <p id="result"></p>
+
+  <script>
+    // 点击按钮时会运行这个函数
+    function greet() {
+      const name = document.getElementById('name').value;
+      document.getElementById('result').textContent = '你好，' + name + '！欢迎来到 AI 全栈世界 🚀';
+    }
+  </script>
+</body>
+</html>
